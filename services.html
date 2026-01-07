@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Services | Lehlabile Funeral Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <img src="images/logo.png" alt="Lehlabile Logo" class="logo">
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -20,49 +29,54 @@
     </div>
   </header>
 
-  <main class="page-content">
-    <div class="container">
+  <!-- Hero Section - Static Image -->
+  <section class="hero-static">
+    <div class="hero-bg" style="background-image: url('images/services-hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
       <h1>Our Burial Plans</h1>
-      
+      <p>Affordable, transparent, and dignified — from R100 to join.</p>
+    </div>
+  </section>
+
+  <main class="page-content wow animate__animated animate__fadeIn">
+    <div class="container">
       <div class="plan-note">
         <p><strong>Joining Fee:</strong> R100 (one-time)</p>
         <p><strong>Waiting Period:</strong> 6 months from joining date</p>
         <p><strong>Cash Back Policy:</strong> If you never use our service, you receive cash of your policy cover amount.</p>
       </div>
 
-      <!-- Plan Grid -->
       <div class="plans-grid">
-        <!-- Plan A -->
-        <div class="plan-card">
+        <div class="plan-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
           <h2>BURIAL PLAN A</h2>
           <ul>
             <li><strong>Joining Fee @ R100</strong></li>
             <li><strong>Cover Value @ R5,000</strong></li>
-            <li>Family (1-9) Age 18-65 @ R210 p/m</li>
-            <li>Pensioner Age (65-75) @ R230 p/m</li>
+            <li>Family (1-9) Age 18-64 @ R210 p/m</li>
+            <li>Pensioner Age (65-74) @ R230 p/m</li>
             <li>Pensioner Age (75-85) @ R250 p/m</li>
           </ul>
           <h3>Cover Includes:</h3>
           <ul>
-            <li>Coffin & Service</li>
+            <li>Coffin</li>
             <li>1x Family car</li>
             <li>Programs (50 B/W)</li>
           </ul>
         </div>
 
-        <!-- Plan B -->
-        <div class="plan-card">
+        <div class="plan-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
           <h2>BURIAL PLAN B</h2>
           <ul>
             <li><strong>Joining Fee @ R100</strong></li>
             <li><strong>Cover Value @ R10,000</strong></li>
-            <li>Family (1-9) Age 18-65 @ R270 p/m</li>
-            <li>Pensioner Age (65-75) @ R300 p/m</li>
+            <li>Family (1-9) Age 18-64 @ R270 p/m</li>
+            <li>Pensioner Age (65-74) @ R300 p/m</li>
             <li>Pensioner Age (75-85) @ R350 p/m</li>
           </ul>
           <h3>Cover Includes:</h3>
           <ul>
-            <li>Coffin & Service</li>
+            <li>Coffin</li>
             <li>2x Family cars</li>
             <li>Programs (100 B/W)</li>
             <li>Chairs (50)</li>
@@ -71,13 +85,12 @@
           </ul>
         </div>
 
-        <!-- Plan C -->
-        <div class="plan-card">
+        <div class="plan-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
           <h2>BURIAL PLAN C</h2>
           <ul>
             <li><strong>Joining Fee @ R100</strong></li>
             <li><strong>Cover Value @ R15,000</strong></li>
-            <li>Family (1-9) Age 18-65 @ R330 p/m</li>
+            <li>Family (1-9) Age 18-64 @ R330 p/m</li>
             <li>Pensioner Age 65-75 @ R380 p/m</li>
           </ul>
           <h3>Cover Includes:</h3>
@@ -92,18 +105,17 @@
           </ul>
         </div>
 
-        <!-- Plan D -->
-        <div class="plan-card">
+        <div class="plan-card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
           <h2>BURIAL PLAN D</h2>
           <ul>
             <li><strong>Joining Fee @ R100</strong></li>
             <li><strong>Cover Value @ R20,000</strong></li>
-            <li>Family (1-9) Age 18-65 @ R400 p/m</li>
+            <li>Family (1-9) Age 18-64 @ R400 p/m</li>
             <li>Pensioner Age 65-75 @ R450 p/m</li>
           </ul>
           <h3>Cover Includes:</h3>
           <ul>
-            <li>Dome</li>
+            <li>Casket</li>
             <li>3x Family cars</li>
             <li>Programs (200 Colour)</li>
             <li>Chairs (120)</li>
@@ -113,8 +125,7 @@
           </ul>
         </div>
 
-        <!-- Individual Plan -->
-        <div class="plan-card">
+        <div class="plan-card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
           <h2>INDIVIDUAL</h2>
           <ul>
             <li><strong>Joining Fee @ R100</strong></li>
@@ -125,8 +136,7 @@
           </ul>
         </div>
 
-        <!-- Single Parent -->
-        <div class="plan-card">
+        <div class="plan-card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
           <h2>SINGLE PARENT</h2>
           <ul>
             <li><strong>Joining Fee @ R100</strong></li>
@@ -137,8 +147,7 @@
           </ul>
         </div>
 
-        <!-- Family Plan -->
-        <div class="plan-card">
+        <div class="plan-card wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
           <h2>FAMILY PLAN</h2>
           <ul>
             <li><strong>Joining Fee @ R100</strong></li>
@@ -150,19 +159,51 @@
         </div>
       </div>
 
-      <div class="cta-section">
+      <div class="cta-section wow animate__animated animate__fadeIn">
         <h2>Ready to Join?</h2>
-        <p>Contact Agent Sipho Nkuna today to enroll or get a quote.</p>
-        <a href="contact.html" class="cta-button">WhatsApp Sipho: 079 5549 805</a>
+        <p>Contact our team today to enroll or get a quote.</p>
+        <a href="contact.html" class="cta-button">WhatsApp: 082 419 7604</a>
       </div>
     </div>
   </main>
 
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/27824197604" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp">
+  </a>
+
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Lehlabile Funeral Services | 25 Clarinet Street, Tasbet Park ext2 1043</p>
-      <p>Agent: Sipho Nkuna | <strong>Call/WhatsApp: 079 5549 805</strong></p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Burial Plans</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>&copy; 2025 Lehlabile Funeral Services</p>
+          <p>25 Clarinet Street, Tasbet Park ext2, 1043</p>
+          <p>AFPO Membership Certificate Number: 2024/MP/030 | Funeral Registration Number: 2020/226253/07</p>
+          
+          <div class="footer-social mt-4">
+            <a href="https://instagram.com/YOUR_HANDLE" class="me-3 fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com/@YOUR_CHANNEL" class="me-3 fs-5" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com/YOUR_HANDLE" class="me-3 fs-5" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://tiktok.com/@YOUR_HANDLE" class="fs-5" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="js/main.js"></script>
 </body>
 </html>
