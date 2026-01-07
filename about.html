@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | Lehlabile Funeral Services</title>
+  <title>Lehlabile Funeral Services | Burial with Dignity</title>
+  <meta name="description" content="Compassionate funeral services in South Africa. Plans A-D, Individual, Single Parent & Family options. 6-month waiting period. Cash back if unused.">
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons (for social) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Animate.css -->
   <link rel="stylesheet" href="css/animate.min.css">
+  <!-- Swiper -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Your Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <img src="images/logo.png" alt="Lehlabile Logo" class="logo">
+      <img src="images/logo.png" alt="Lehlabile Funeral Services Logo" class="logo">
       <button class="menu-toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -33,71 +40,118 @@
     </div>
   </header>
 
-  <!-- Static Hero Image Section -->
-  <section class="hero-static">
-    <div class="hero-bg" style="background-image: url('images/about-hero.jpg');"></div>
+  <!-- Updated Hero Section with Video -->
+  <section class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video-bg">
+      <source src="videos/hero-video.mp4" type="video/mp4">
+      <source src="videos/hero-video.webp" type="video/mp4">
+      <img src="images/hero-fallback.jpg" alt="Lehlabile Funeral Services" class="hero-fallback">
+    </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Our Story</h1>
-      <p>Rooted in community, guided by compassion, registered with AFPO.</p>
+      <h1>Burial with Dignity</h1>
+      <p>Trusted by families across Emalahleni, Mpumalanga since 2020. Affordable, respectful, culturally aware.</p>
+      <a href="contact.html" class="cta-button">Call or WhatsApp: 0824197604</a>
     </div>
   </section>
 
-  <main class="page-content wow animate__animated animate__fadeIn">
+  <section class="services-preview wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
     <div class="container">
-      <p class="wow animate__animated animate__fadeInUp">
-        Founded in 2020 by three community-driven leaders, Lehlabile Funeral Services was born from a solemn promise:  
-        <em>“To ensure every family can bury their loved one with dignity — no matter their income.”</em>
-      </p>
-
-      <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-        We are proudly registered under the <strong>Association of Funeral Professionals of South Africa (AFPO)</strong> with Certificate Number <strong>2024/MP/030</strong>, and fully compliant with South African funeral regulations.
-      </p>
-
-      <!-- Leadership Team -->
-      <h2 class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Our Leadership</h2>
-      <div class="team-grid wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-        <div class="team-member">
-          <div class="team-avatar">
-            <img src="images/team/sipho-nkuna.jpg" alt="Sipho Nkuna, CEO">
-          </div>
-          <h3>Sipho Nkuna</h3>
-          <p>Chief Executive Officer</p>
+      <h2>Our Burial Plans</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Plan A</h3>
+          <p>From R100 To Join • Cover R5,000</p>
         </div>
-        <div class="team-member">
-          <div class="team-avatar">
-            <img src="images/team/dikeledi-mogoba.jpg" alt="Dikeledi Mogoba, Secretary">
-          </div>
-          <h3>Dikeledi Mogoba</h3>
-          <p>Secretary</p>
+        <div class="card">
+          <h3>Plan B</h3>
+          <p>From R100 To Join • Cover R10,000</p>
         </div>
-        <div class="team-member">
-          <div class="team-avatar">
-            <img src="images/team/kgao.jpg" alt="Kgao, Assets Manager">
-          </div>
-          <h3>Kgaogelo Letau</h3>
-          <p>Assets Manager</p>
+        <div class="card">
+          <h3>Plan C</h3>
+          <p>From R100 To Join • Cover R15,000</p>
+        </div>
+        <div class="card">
+          <h3>Plan D</h3>
+          <p>From R100 To Join • Cover R20,000</p>
         </div>
       </div>
+      <a href="services.html" class="text-link">View All Plans →</a>
+    </div>
+  </section>
 
-      <h2 class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Our Promise to You</h2>
-      <ul class="values-list wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-        <li>✅ <strong>No Hidden Fees</strong> — All costs are clearly listed upfront</li>
-        <li>✅ <strong>6-Month Waiting Period</strong> — Standard for all new members</li>
-        <li>✅ <strong>Cash Back Guarantee</strong> — Receive your full cover amount if the service is never used</li>
-        <li>✅ <strong>24/7 Compassionate Support</strong> — Reach our team anytime via WhatsApp. We answer, because your time of need doesn’t keep business hours.</li>
-      </ul>
+  <!-- Testimonials -->
+  <section class="testimonials-section py-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+    <div class="container">
+      <h2 class="text-center mb-4">What Families Say</h2>
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card p-4">
+              <div class="testimonial-avatar mb-3">
+                <img src="images/testimonials/nomsa.jpg" alt="Nomsa M." class="rounded-circle">
+              </div>
+              <p class="mb-3">“Lehlabile handled everything with such care. From the call to burial, we felt supported.”</p>
+              <strong>— Nomsa M., Emalaheni</strong>
+            </div>
+          </div>
 
-      <div class="team-note wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-        <p>We don’t just arrange funerals — we walk with families through grief. Our team includes trained funeral directors, community liaisons, and grief companions who understand loss, culture, and the sacredness of farewell.</p>
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card p-4">
+              <div class="testimonial-avatar mb-3">
+                <img src="images/testimonials/thabo.jpg" alt="Thabo L." class="rounded-circle">
+              </div>
+              <p class="mb-3">“The cash-back policy gave us peace of mind. Transparent and trustworthy.”</p>
+              <strong>— Thabo L., Witbank</strong>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card p-4">
+              <div class="testimonial-avatar mb-3">
+                <img src="images/testimonials/lerato.jpg" alt="Lerato K." class="rounded-circle">
+              </div>
+              <p class="mb-3">“Sipho was available at 2 a.m. when we needed help. That’s real service.”</p>
+              <strong>— Lerato K., Middelburg</strong>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card p-4">
+              <div class="testimonial-avatar mb-3">
+                <img src="images/testimonials/jabu.jpg" alt="Jabu S." class="rounded-circle">
+              </div>
+              <p class="mb-3">“I lost my father suddenly. Lehlabile guided us through every step with compassion.”</p>
+              <strong>— Jabu S., Ermelo</strong>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card p-4">
+              <div class="testimonial-avatar mb-3">
+                <img src="images/testimonials/sipho.jpg" alt="Sipho D." class="rounded-circle">
+              </div>
+              <p class="mb-3">“As a pensioner, I was worried about costs. Their Plan A gave me dignity without debt.”</p>
+              <strong>— Sipho D., Bethal</strong>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-3"></div>
       </div>
     </div>
-  </main>
+  </section>
 
+  <!-- WhatsApp Float -->
   <a href="https://wa.me/27824197604" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <img src="images/whatsapp-icon.png" alt="WhatsApp">
   </a>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -115,6 +169,7 @@
           <p>25 Clarinet Street, Tasbet Park ext2, 1043</p>
           <p>AFPO Membership Certificate Number: 2024/MP/030 | Funeral Registration Number: 2020/226253/07</p>
           
+          <!-- Social Icons -->
           <div class="footer-social mt-4">
             <a href="https://instagram.com/YOUR_HANDLE" class="me-3 fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="https://youtube.com/@YOUR_CHANNEL" class="me-3 fs-5" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
@@ -126,63 +181,36 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script>new WOW().init();</script>
+  <script>
+  new WOW().init();
+  new Swiper('.testimonial-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    on: {
+      init() {
+        const swiper = this;
+        const container = swiper.el.closest('.testimonials-section');
+        if (container) {
+          container.addEventListener('mouseenter', () => swiper.autoplay.stop());
+          container.addEventListener('mouseleave', () => swiper.autoplay.start());
+        }
+      }
+    }
+  });
+  </script>
   <script src="js/main.js"></script>
 </body>
-</html>-width, initial-scale=1.0"/>
-  <title>About Us | Lehlabile Funeral Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <img src="images/logo.png" alt="Lehlabile Logo" class="logo">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page-content">
-    <div class="container">
-      <h1>About Lehlabile</h1>
-      
-      <p>
-        Founded in 2020 by <strong>Sipho Nkuna</strong>, Lehlabile Funeral Services was born from a simple promise: 
-        <em>“To ensure every family can bury their loved one with dignity — no matter their budget.”</em>
-      </p>
-
-      <p>
-        Located at <strong>25 Clarinet Street, Tasbet Park ext2 1043</strong>, we serve communities across Johannesburg, Soweto, and beyond — with compassion, cultural awareness, and transparency.
-      </p>
-
-      <h2>Our Promise to You</h2>
-      <ul class="values-list">
-        <li>✅ <strong>No Hidden Fees</strong> — All costs clearly listed</li>
-        <li>✅ <strong>6-Month Waiting Period</strong> — Standard for new members</li>
-        <li>✅ <strong>Cash Back Policy</strong> — Get your cover amount if you don’t use our service</li>
-        <li>✅ <strong>Personal Agent Support</strong> — Sipho Nkuna available 24/7 via WhatsApp</li>
-      </ul>
-
-      <div class="team-note">
-        <p>We believe in walking beside you — not just managing logistics. Our team includes trained funeral directors, community liaisons, and grief companions who understand what you’re going through.</p>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Lehlabile Funeral Services | 25 Clarinet Street, Tasbet Park ext2 1043</p>
-      <p>Agent: Sipho Nkuna | <strong>Call/WhatsApp: 079 5549 805</strong></p>
-    </div>
-  </footer>
-</body>
-
 </html>
