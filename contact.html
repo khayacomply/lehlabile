@@ -4,57 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | Lehlabile Funeral Services</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="images/logo.png" alt="Lehlabile Logo" class="logo">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+<header class="header">
+  <div class="container">
+    <img src="images/logo.png" alt="Lehlabile Logo" class="logo">
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-content wow animate__animated animate__fadeIn">
+  <div class="container">
+    <h1>Contact Our Support Team</h1>
+
+    <div class="contact-info">
+      <p><strong>Emergency & WhatsApp:</strong> <a href="https://wa.me/27824197604">082 419 7604</a></p>
+      <p><strong>Alternative Line:</strong> <a href="tel:+27795549805">079 554 9805</a></p>
+      <p><strong>Email:</strong> <a href="mailto:lehlabilefuneral@gmail.com">lehlabilefuneral@gmail.com</a></p>
+      <p><strong>Address:</strong> 25 Clarinet Street, Tasbet Park 2, Emalahleni, Mpumalanga, 1043</p>
     </div>
-  </header>
 
-  <main class="page-content">
-    <div class="container">
-      <h1>Contact Agent Sipho Nkuna</h1>
+    <!-- Contact Form – FIXED -->
+   <form class="contact-form wow animate__animated animate__fadeInUp"
+      action="https://formsubmit.co/lehlabilefuneral@gmail.com"
+      method="POST">
 
-      <div class="contact-info">
-        <p><strong>Emergency Line:</strong> <a href="tel:+27824197604">082 419 7604</a></p>
-        <p><strong>Alternative Line:</strong> <a href="tel:+27724751296">072 475 1296</a></p>
-        <p><strong>WhatsApp / Direct Agent:</strong> <a href="https://wa.me/27795549805">079 5549 805</a></p>
-        <p><strong>Email:</strong> <a href="mailto:lehlabilefuneral@gmail.com">lehlabilefuneral@gmail.com</a></p>
-        <p><strong>Address:</strong> 25 Clarinet Street, Tasbet Park ext2 1043</p>
-      </div>
+  <h2>Send a Message</h2>
 
-      <!-- Simple contact form -->
-      <form class="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
-        <h2>Send a Message to Sipho</h2>
-        <input type="text" name="name" placeholder="Your Full Name" required>
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        <textarea name="message" placeholder="What plan are you interested in? Any questions?" rows="4" required></textarea>
-        <button type="submit" class="cta-button">Send Message</button>
-        <input type="hidden" name="_next" value="contact.html">
-        <input type="hidden" name="_subject" value="Lehlabile Contact Form">
-      </form>
+  <input type="text" name="name" placeholder="Your Full Name" required>
 
-      <!-- Optional: Google Map Embed Code -->
-      <!-- <div class="map-placeholder">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.544... (add your actual map link)" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div> -->
-    </div>
-  </main>
+  <!-- REQUIRED BY FORMSUBMIT -->
+  <input type="email" name="email" placeholder="Your Email Address" required>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Lehlabile Funeral Services | 25 Clarinet Street, Tasbet Park ext2 1043</p>
-      <p>Agent: Sipho Nkuna | <strong>Call/WhatsApp: 079 5549 805</strong></p>
-    </div>
-  </footer>
+  <input type="tel" name="phone" placeholder="Your Phone Number" required>
+
+  <textarea name="message" rows="4"
+    placeholder="What plan are you interested in? Any questions?" required></textarea>
+
+  <button type="submit" class="cta-button">Send Message</button>
+
+  <!-- ABSOLUTE REDIRECT URL -->
+  <input type="hidden" name="_next" value="https://YOURDOMAIN.COM/thanks.html">
+
+  <input type="hidden" name="_subject" value="Lehlabile Contact Form">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <input type="hidden" name="_autoresponse"
+    value="Thank you for contacting Lehlabile Funeral Services. We’ll respond shortly. For urgent matters, call 082 419 7604.">
+</form>
+
+  </div>
+</main>
+
+<a href="https://wa.me/27824197604" class="whatsapp-float" target="_blank">
+  <img src="images/whatsapp-icon.png" alt="WhatsApp">
+</a>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Lehlabile Funeral Services</p>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
